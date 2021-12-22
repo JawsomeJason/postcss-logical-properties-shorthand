@@ -1,0 +1,53 @@
+{
+  "name": "postcss-logical-properties-shorthand",
+  "version": "0.0.0",
+  "description": "PostCSS plugin that expands shorthanded logical properties",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "postcss-logical-properties-shorthand"
+  ],
+  "scripts": {
+    "test": "jest --coverage && eslint ."
+  },
+  "author": "Jason T. Featheringham <jason@unicycle.co>",
+  "license": "MIT",
+  "repository": "JawsomeJason/postcss-logical-properties-shorthand",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "^7.0.39"
+  },
+  "devDependencies": {
+    "clean-publish": "^3.4.2",
+    "eslint": "^8.0.1",
+    "eslint-plugin-jest": "^25.2.2",
+    "jest": "^27.3.1",
+    "postcss": "^7.0.39"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:jest/recommended"
+    ],
+    "rules": {
+      "jest/expect-expect": "off"
+    }
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 100
+      }
+    }
+  }
+}
